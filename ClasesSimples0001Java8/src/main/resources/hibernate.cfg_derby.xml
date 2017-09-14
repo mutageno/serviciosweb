@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <!-- Configuración del acceso a la base de datos -->
+    <property name="connection.driver_class">
+            org.apache.derby.jdbc.ClientDriver
+        </property>
+    <property name="connection.url">
+            jdbc:derby://localhost:1527/curso;create=true
+        </property>
+    <property name="connection.username">app</property>
+    <property name="connection.password">app</property>
+    <!-- Pool de conexiones JDBC -->
+    <property name="connection.pool_size">1</property>
+    <!-- Dialecto SQL-->
+    <property name="dialect">
+            org.hibernate.dialect.DerbyDialect
+        </property>
+    <!-- Activar la gestión automática de sesiones -->
+    <property name="current_session_context_class">thread</property>
+    <!-- Desactivar el caché de segundo nivel -->
+    <property name="cache.provider_class">
+            org.hibernate.cache.NoCacheProvider
+        </property>
+    <!-- Mostrar con formato las sentencias SQL generadas -->
+    <property name="show_sql">false</property>
+    <property name="format_sql">false</property>
+    <!-- Eliminar y volver a crear la base de datos -->
+    <!--
+        <property name="hbm2ddl.auto">create-drop</property>
+-->
+    <property name="hbm2ddl.auto">create-drop</property>
+    <!-- Mapas clases-tablas -->
+    <property name="hibernate.use_sql_comments">false</property>
+    <mapping resource="mapas/Usuario.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

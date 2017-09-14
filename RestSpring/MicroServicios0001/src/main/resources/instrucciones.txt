@@ -1,0 +1,10 @@
+Asegurarse de que el GlashFish está detenido.
+Por defecto usa el mismo puerto que nuestra aplicación
+
+1.- Una vez arrancado el programa, en el navegador ir a localhost:8080 y
+observar el resultado
+
+2.- En el navegador, ir a localhost:8080/cliente/1 y observar el resultado
+
+3.- En el navegador, ir a localhost:8080/cliente/1000 y observar el resultado
+

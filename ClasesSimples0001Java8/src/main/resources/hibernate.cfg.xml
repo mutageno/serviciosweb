@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Configuración del acceso a la base de datos -->
+        <property name="hibernate.connection.driver_class">org.h2.Driver</property>
+        <property name="hibernate.connection.url">jdbc:h2:mem:curso</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.default_schema">PUBLIC</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property>        
+        <!-- Activar la gestión automática de sesiones -->
+        <property name="current_session_context_class">thread</property>
+        <!-- Desactivar el caché de segundo nivel -->
+        <property name="cache.provider_class">
+            org.hibernate.cache.NoCacheProvider
+        </property>
+        <!-- Mostrar con formato las sentencias SQL generadas -->
+        <property name="show_sql">false</property>
+        <property name="format_sql">false</property>
+        <!-- Eliminar y volver a crear la base de datos -->
+        <!--
+                <property name="hbm2ddl.auto">create-drop</property>
+        -->
+        <property name="hbm2ddl.auto">create-drop</property>
+        <!-- Mapas clases-tablas -->
+        <property name="hibernate.use_sql_comments">false</property>
+        <mapping resource="mapas/Usuario.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

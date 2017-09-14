@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws.persistenciawsmvn.curso.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.persistenciawsmvn.curso.com/">
+
+<xs:element name="nuevaPersona" type="tns:nuevaPersona"/>
+
+<xs:element name="nuevaPersonaResponse" type="tns:nuevaPersonaResponse"/>
+
+<xs:element name="todas" type="tns:todas"/>
+
+<xs:element name="todasResponse" type="tns:todasResponse"/>
+
+<xs:complexType name="nuevaPersona">
+<xs:sequence>
+<xs:element name="arg0" type="tns:persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persona">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nuevaPersonaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="todas">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="todasResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:persona" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

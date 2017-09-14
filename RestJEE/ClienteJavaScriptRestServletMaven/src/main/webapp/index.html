@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript" src="js/prototype.js"></script>
+        <script type="text/javascript" >
+            function limpiar() {
+                document.getElementById('detalle').innerHTML = 'Borrado';
+            }
+            peticionGet = function () {
+                new Ajax.Request('http://localhost:8080/EjemploRestServletMaven/RestServlet',
+                        {
+                            method: 'get',
+                            onSuccess: function (r) {
+                                alert(r.responseText);
+                                //Inseguro
+                                //eval('var datos = ' + r.responseText);
+                                var datos = JSON.parse(r.responseText);
+                                var v = document.getElementById('detalle');
+                                v.innerHTML = 'Recibido: <strong>' + datos.nombre + '</strong>';
+                            },
+                            onFailure: function (r) {
+                                throw new Error('Error al comunicar con el Servicio Web: ' +
+                                        r.statusText);
+                            }
+                        }
+                );
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Ejemplo ClienteJavaScriptRestServletMaven</h1>
+        <h2>La applicación EjemploRestServletMaven debe estar desplegada en el servidor</h2>
+        <button type="button" onclick="peticionGet();">Llamar al servicio RESTful</button>
+        <span id="detalle"></span>
+        <br>
+        <button onclick="limpiar()">Limpiar</button>        
+    </body>
+</html>

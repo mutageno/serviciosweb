@@ -1,0 +1,20 @@
+Servicios web SOAP
+------------------
+FechaWsMvn: uso de métodos One Way. Uso de Message handlers
+FactorialWsMvn: uso de EJBs para crear servicios web. Algunas características de JSE8 de cara al diseño
+EjemploSoapAsyncMvn: servicio web concurrente
+ClienteSoapAsyncMvn: cliente cocurrente
+ClienteAjaxFactorialWsMvn: Llamar a un servicio Web empleando JavaScript
+
+Servicios web RESTful
+---------------------
+FraseWsMaven: Uso de JSON para intercambio de mensajes. Uso "traductores" de objetos al formato JSON
+FraseWsClientMaven: cliente simple del programa FraseWsMaven
+FraseWsAsyncMaven: El servicio web es asíncrono. Traducción de mensajes a JSON sin "traductores"
+ClienteFraseAsyncMaven: cliente simple del programa FraseWsAsyncMaven
+EjemploRestServletMaven: Implementación de un RESTful con una Servlet
+ClienteJavaScriptRestServletMaven: acceso a un RESTful desde una página Web usando AJAX y JSON
+EjemploRestSoap: integración con servicios SOAP
+EjemploRestSoapClient: cliente RESt para EjemploRestSoap
+EjemploRestXml: servicio web REStful que intercambia objetos en formato XML
+EjemploRestXmlClient: cliente para probar EjemploRestXml

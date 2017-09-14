@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            var soapRequest =
+                    '<?xml version="1.0" encoding="UTF-8"?>\
+ <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">\
+    <SOAP-ENV:Header/>\
+    <S:Body>\
+        <ns2:factorial xmlns:ns2="http://factorialwsmvn.curso.com/">\
+            <numero>10.0</numero>\
+        </ns2:factorial>\
+    </S:Body>\
+</S:Envelope>';
+            $(document).ready(
+                    function () {
+                        $('#huecoRequest').html(soapRequest);
+                        $("#test").click(
+                                function (event) {
+                                    var webserUrl = "http://localhost:8080/FactorialWebService/FactorialWebService";
+                                    console.log('Url del servicio web: ' + webserUrl);
+                                    console.log("Petición Soap: " + soapRequest);
+                                    $.ajax(
+                                            {
+                                                type: "POST",
+                                                url: webserUrl,
+                                                contentType: "text/xml",
+                                                dataType: "xml",
+                                                data: soapRequest,
+                                                success: function (data, status, req) {
+                                                    console.log("Return: " + req.responseXML.getElementsByTagName("return")[0].firstChild.nodeValue);
+                                                    $('#huecoResponse').html(req.responseText);
+                                                    console.log('Respuesta del servidor:' + req.responseText);
+                                                    alert(req.responseText);
+                                                },
+                                                error: function (data, status, req) {
+                                                    console.log('Error:' + eq.responseText + " " + status);
+                                                    alert(req.responseText + " " + status);
+                                                }
+                                            }
+                                    );
+                                }
+                        );
+                    }
+            );
+        </script>
+    </head>
+    <body>
+        <h1>Ejemplo ClienteAjaxFactorialWsMvn</h1>
+        <h2>Activar la consola del navegador</h2>
+        <button id="test">Llamar al servicio web soap</button>
+        <h3>Calcular el factorial de <span id="huecoRequest"></span></h3>
+        <h3>El factorial es <span id="huecoResponse"></span></h3>
+    </body>
+</html>

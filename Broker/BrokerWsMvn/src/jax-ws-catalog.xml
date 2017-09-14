@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/ServicioUnoMvn/ServicioUnoMvn?wsdl" uri="wsdl/localhost_8080/ServicioUnoMvn/ServicioUnoMvn.wsdl"/>
+    <system systemId="http://localhost:8080/ServicioUnoMvn/ServicioUnoMvn?xsd=1" uri="wsdl/localhost_8080/ServicioUnoMvn/ServicioUnoMvn.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ServicioDosMvn/ServicioDosMvn?wsdl" uri="wsdl/localhost_8080/ServicioDosMvn/ServicioDosMvn.wsdl"/>
+    <system systemId="http://localhost:8080/ServicioDosMvn/ServicioDosMvn?xsd=1" uri="wsdl/localhost_8080/ServicioDosMvn/ServicioDosMvn.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/BrokerWsMvn/BrokerWebServiceMvn?wsdl" uri="wsdl/localhost_8080/BrokerWsMvn/BrokerWebServiceMvn.wsdl"/>
+    <system systemId="http://localhost:8080/BrokerWsMvn/BrokerWebServiceMvn?xsd=1" uri="wsdl/localhost_8080/BrokerWsMvn/BrokerWebServiceMvn.xsd_1.xsd"/>
+</catalog>
