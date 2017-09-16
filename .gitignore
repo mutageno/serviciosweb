@@ -22,3 +22,10 @@
 hs_err_pid*
 /Cache/CacheWsMaven/target/
 /Cache/ClienteCacheWsMaven/target/
+/Broker/ServicioUnoMvn/target/
+/Broker/ServicioDosMvn/target/
+/Broker/BrokerWsMvn/target/
+/Broker/ClienteBrokerWsMvn/target/
+/RestSpring/MicroServicios0001/target/
+/RestSpring/EjemploRestJson/target/
+/RestSpring/EjemploRequestBody/target/

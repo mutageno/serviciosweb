@@ -1,20 +1,44 @@
+Bajo la carpeta serviciosweb
 Servicios web SOAP
 ------------------
-FechaWsMvn: uso de métodos One Way. Uso de Message handlers
-FactorialWsMvn: uso de EJBs para crear servicios web. Algunas características de JSE8 de cara al diseño
-EjemploSoapAsyncMvn: servicio web concurrente
-ClienteSoapAsyncMvn: cliente cocurrente
-ClienteAjaxFactorialWsMvn: Llamar a un servicio Web empleando JavaScript
+WsSoapGlashFish\FechaWsMvn:
+	uso de métodos One Way. Uso de Message handlers
+WsSoapGlashFish\FactorialWsMvn:
+	uso de EJBs para crear servicios web. Algunas características de JSE8 de cara al diseño
+SoapAsync\EjemploSoapAsyncMvn: servicio web concurrente
+SoapAsync\ClienteSoapAsyncMvn: cliente cocurrente
+WsSoapGlashFish\ClienteAjaxFactorialWsMvn:
+	Llamar a un servicio Web empleando JavaScript
 
-Servicios web RESTful
----------------------
-FraseWsMaven: Uso de JSON para intercambio de mensajes. Uso "traductores" de objetos al formato JSON
-FraseWsClientMaven: cliente simple del programa FraseWsMaven
-FraseWsAsyncMaven: El servicio web es asíncrono. Traducción de mensajes a JSON sin "traductores"
-ClienteFraseAsyncMaven: cliente simple del programa FraseWsAsyncMaven
-EjemploRestServletMaven: Implementación de un RESTful con una Servlet
-ClienteJavaScriptRestServletMaven: acceso a un RESTful desde una página Web usando AJAX y JSON
-EjemploRestSoap: integración con servicios SOAP
-EjemploRestSoapClient: cliente RESt para EjemploRestSoap
-EjemploRestXml: servicio web REStful que intercambia objetos en formato XML
-EjemploRestXmlClient: cliente para probar EjemploRestXml
+Servicios web RESTful estándar Java
+------------------------------------
+RestJEE\FraseWsMaven:
+	Uso de JSON para intercambio de mensajes.
+	Uso de "traductores" de objetos al formato JSON
+RestJEE\FraseWsClientMaven:
+	Cliente simple del programa FraseWsMaven
+RestJEE\FraseWsAsyncMaven:
+	El servicio web es asíncrono.
+	Traducción de mensajes a JSON sin "traductores"
+RestJEE\ClienteFraseAsyncMaven:
+	Cliente simple del programa FraseWsAsyncMaven
+RestJEE\EjemploRestServletMaven:
+	Implementación de un RESTful con una Servlet
+RestJEE\ClienteJavaScriptRestServletMaven:
+	Acceso a un RESTful desde una página Web usando AJAX y JSON
+EjemploRestSoap:
+	Integración con servicios SOAP
+RestJEE\EjemploRestSoapClient: 
+	Cliente RESt para EjemploRestSoap
+RestJEE\EjemploRestXml:
+	Servicio web REStful que intercambia objetos en formato XML
+RestJEE\EjemploRestXmlClient:
+	Cliente para probar EjemploRestXml
+Servicios web RESTful Spring
+----------------------------
+RestSpring\EjemploRestJson:
+	Creado con SpringWeb MVC
+RestSpring\MicroServicios0001:
+	Ejemplo simple de diseño
+RestSpring\EjemploRequestBody:
+	Algunas características más flexibles
