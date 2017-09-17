@@ -42,3 +42,14 @@ hs_err_pid*
 /Dispatch/MensajeLibMaven/target/
 /Dispatch/EjemploWsMaven/target/
 /Dispatch/EjemploWsClienteMaven/target/
+/RestJEE/FraseWsMaven/target/
+/RestJEE/FraseWsClientMaven/target/
+/RestJEE/FraseWsAsyncMaven/target/
+/RestJEE/ClienteFraseAsyncMaven/target/
+/RestJEE/EjemploRestServletMaven/target/
+/RestJEE/ClienteJavaScriptRestServletMaven/target/
+/Objetos/EjemploWsObjetosMaven/target/
+/RestJEE/EjemploRestSoap/target/
+/RestJEE/EjemploRestSoapClient/target/
+/RestJEE/EjemploRestXml/target/
+/RestJEE/EjemploRestXmlClient/target/

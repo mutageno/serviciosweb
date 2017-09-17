@@ -22,7 +22,7 @@ public class GestorSoap {
             PersonaWebService port = service.getPersonaWebServicePort();
             // TODO process result here
             result = port.crearPersona();
-            result.setNombre("Nombre añadido en el servicio Web Restful");
+            result.setNombre("Nombre asignado en el servicio Web Restful");
             System.out.println("Result = " + result);
         } catch (Exception ex) {
             System.out.println("Ha ocurrido un error: " + ex);
