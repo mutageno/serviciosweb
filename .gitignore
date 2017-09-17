@@ -29,3 +29,16 @@ hs_err_pid*
 /RestSpring/MicroServicios0001/target/
 /RestSpring/EjemploRestJson/target/
 /RestSpring/EjemploRequestBody/target/
+/WsSoapGlashFish/FechaWsMvn/target/
+/WsSoapGlashFish/ClienteFechaWsMvn/target/
+/WsSoapGlashFish/FactorialWsMvn/target/
+/WsSoapGlashFish/ClienteAjaxFactorialWsMvn/target/
+/SoapAsync/EjemploSoapAsyncMvn/target/
+/SoapAsync/ClienteSoapAsyncMvn/target/
+/Persistencia/PersistenciaWsMvn/target/
+/Persistencia/ClientePersistenciaWsMvn/target/
+/InteraccionAsincrona/EmailWsJEE7Mvn/target/
+/InteraccionAsincrona/ClienteEmailWsJEE7Mvn/target/
+/Dispatch/MensajeLibMaven/target/
+/Dispatch/EjemploWsMaven/target/
+/Dispatch/EjemploWsClienteMaven/target/
