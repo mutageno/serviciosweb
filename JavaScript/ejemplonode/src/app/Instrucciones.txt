@@ -1,0 +1,4 @@
+Para desactivar el error 'No 'Access-Control-Allow-Origin' header is present on the requested resource'
+por la vía rápida, escribir en una ventana de comandos:
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --user-data-dir="C:/Chrome dev session" --disable-web-security
+Esto abrirá una nueva instancia del Chrome. Teclear en la barra del navegador: localhost:4200

@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>
+    {{title}}
+  </h2>
+  <button class="btn btn-success" (click)="refrescar()">Refrescar Datos</button>
+  <button class="btn btn-warning" (click)="metodoPost()">Crear usuario nuevo</button>
+  <h2>Lista de usuarios</h2>
+  <table class="table">
+    <thead>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Password</th>
+    </thead>
+    <tr *ngFor='let dato of datos | async'>
+      <td>{{dato._id}}</td>
+      <td>{{dato.name}}</td>
+      <td>{{dato.email}}</td>
+      <td>{{dato.password}}</td>
+    </tr>
+  </table>
+  <h2>Respuesta del lado servidor...</h2>
+  <div>{{respuesta._id || 'Esperando...'}}</div>
+  <div>{{respuesta.name || 'Esperando...'}}</div>
+  <div>{{respuesta.email || 'Esperando...'}}</div>
+  <div>{{respuesta.password || 'Esperando...'}}</div>
+</div>
