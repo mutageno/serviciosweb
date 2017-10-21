@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style type="text/css">
+            .container .panel {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        </style>
+    </head>
+    <body>        
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">MiniTwitter Login</div>
+                <div class="panel-body">
+                    <form method="POST" action="LoginServlet">
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Clave de acceso:</label>
+                            <input type="password" class="form-control" name="pwd">
+                        </div>
+                        <button type="submit" class="btn btn-default">Enviar</button>
+                    </form> 
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
