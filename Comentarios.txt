@@ -6,7 +6,7 @@ WsSoapGlashFish\FechaWsMvn:
 WsSoapGlashFish\FactorialWsMvn:
 	uso de EJBs para crear servicios web. Algunas características de JSE8 de cara al diseño
 SoapAsync\EjemploSoapAsyncMvn: servicio web concurrente
-SoapAsync\ClienteSoapAsyncMvn: cliente cocurrente
+SoapAsync\ClienteSoapAsyncMvn: cliente concurrente
 WsSoapGlashFish\ClienteAjaxFactorialWsMvn:
 	Llamar a un servicio Web empleando JavaScript
 
@@ -15,6 +15,7 @@ Servicios web RESTful estándar Java
 RestJEE\FraseWsMaven:
 	Uso de JSON para intercambio de mensajes.
 	Uso de "traductores" de objetos al formato JSON
+	Instrucciones para ver el archivo "wadl" generado automáticamente por GlassFish
 RestJEE\FraseWsClientMaven:
 	Cliente simple del programa FraseWsMaven
 RestJEE\FraseWsAsyncMaven:
