@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<biblioteca xmlns="http://xml.netbeans.org/schema/biblioteca">
+    <libro isbn="123">
+        <titulo>cualquiera</titulo>
+        <autor>uno</autor>
+        <precio>30.0</precio>
+    </libro>
+</biblioteca>

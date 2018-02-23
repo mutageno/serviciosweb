@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concesionario>
+    <coche estado="disponible">
+        <matricula>abc</matricula>
+    </coche>    
+    <moto estado="vendido">
+        <matricula>abc</matricula>
+    </moto>
+</concesionario>

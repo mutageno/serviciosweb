@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<provincia>
+    <localidades>
+        <codigoPostal>28028</codigoPostal>
+        <nombre>Madrid</nombre>
+    </localidades>
+    <localidades>
+        <codigoPostal>28820</codigoPostal>
+        <nombre>Coslada</nombre>
+    </localidades>
+    <nombre>Madrid</nombre>
+</provincia>

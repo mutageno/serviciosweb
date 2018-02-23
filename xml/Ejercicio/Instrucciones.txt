@@ -1,0 +1,25 @@
+agenda.xml-->ejercicio-->salida.xml
+
+salida.xsl-->
+             ejercicio-->salida.html
+salida.xml-->
+
+1.- Leer agenda.xml con el DOM
+2.- Generar un nuevo árbol DOM
+    vacío en memoria
+3.- Rellenarlo con los datos de
+    la agenda
+4.- Volcar el nuevo árbol a un
+    archivo en disco (salida.xml)
+5.- Leer el nuevo archivo (salida.xml)
+    y la hoja de estilo (salida.xsl)
+6.- Realizar la transformación con
+    TrAX y volcar el resultado al disco
+    (salida.html)
+7.- Ver la página generada (salida.html)
+    en el navegador
+
+NOTA: para añadir un atributo a
+      un nodo, examinar el método
+      "setAttribute" de la interfaz
+      Element

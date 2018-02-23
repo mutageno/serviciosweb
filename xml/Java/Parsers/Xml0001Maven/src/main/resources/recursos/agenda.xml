@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "agenda.dtd">
+<!--
+    Document   : agenda.xml.xml
+    Created on : 25 de noviembre de 2007, 19:21
+    Author     : user
+    Description:
+        Purpose of the document follows.
+-->
+<?avisar asunto="reunión mañana a las 12"?>
+<agenda>
+    <contacto clase="trabajo">
+        <nombre>Carlos</nombre>
+        <telefono>911234567</telefono>
+        <?avisar asunto="hoy es su cumple"?>
+    </contacto>    
+    <contacto clase="personal">
+        <nombre>Juan</nombre>
+        <telefono>931234567</telefono>
+    </contacto>
+</agenda>

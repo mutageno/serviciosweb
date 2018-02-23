@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.netbeans.org/schema/agenda"
+            xmlns:tns="http://xml.netbeans.org/schema/agenda"
+            elementFormDefault="qualified">
+    <xsd:complexType name="tipoContacto">
+        <xsd:sequence minOccurs="1">
+            <xsd:element name="nombre"/>
+            <xsd:element name="telefono" type="xsd:integer"/>
+        </xsd:sequence>
+        <xsd:attribute name="clase" type="xsd:string" use="required"/>
+    </xsd:complexType>
+    <xsd:complexType name="listaContactos">
+        <xsd:sequence maxOccurs="unbounded">
+            <xsd:element ref="tns:contacto"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="agenda" type="tns:listaContactos"/>
+    <xsd:element name="contacto" type="tns:tipoContacto"/>
+</xsd:schema>

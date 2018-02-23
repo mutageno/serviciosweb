@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : newXMLDocument1.xml
+    Created on : 27 de noviembre de 2007, 10:36
+    Author     : user
+    Description:
+        Purpose of the document follows.
+-->
+
+<biblioteca>
+    <libro isbn="787">
+        <titulo>uno</titulo>
+        <autor>autor1</autor>
+        <precio>123.45</precio>
+    </libro>    
+    <libro isbn="456a">
+        <titulo>dos</titulo>
+        <autor>autor2</autor>
+        <precio>678.90</precio>
+    </libro>
+</biblioteca>

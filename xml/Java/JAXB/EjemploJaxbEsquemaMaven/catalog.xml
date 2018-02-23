@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/usuario/Desktop/Disco%20actual/Chema/NMFI/Procesamiento%20de%20documentos%20XML%20con%20Java/Ejemplos/EjemploJaxbEsquemaMaven/src/main/resources/recursos/biblioteca.xsd" uri="src/main/resources/jaxb/Biblioteca/biblioteca.xsd"/>
+</catalog>

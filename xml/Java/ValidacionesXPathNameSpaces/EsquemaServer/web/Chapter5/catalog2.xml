@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.w3.org/2001/XMLSchema-Instance">
+  <journal title="Java Technology" 
+   publisher="IBM developerWorks">
+    <article level="Intermediate" date="February-2003">
+     <title>Design XML Schemas Using UML</title>
+         <author>Ayesha Malik</author>
+    </article>
+</journal>
+</catalog>

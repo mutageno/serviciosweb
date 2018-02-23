@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/agenda.dtd
+
+--><!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE agenda SYSTEM "agenda.dtd">
+
+    <agenda>
+    ...
+    </agenda>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT agenda (contacto)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT contacto (telefono|nombre)*>
+<!ATTLIST contacto
+    clase CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nombre (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT telefono (#PCDATA)>

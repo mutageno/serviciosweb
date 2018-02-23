@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.netbeans.org/schema/biblioteca"
+            xmlns:tns="http://xml.netbeans.org/schema/biblioteca"
+            elementFormDefault="qualified">
+    <xsd:complexType name="tipoLibro">
+        <xsd:sequence minOccurs="1">
+            <xsd:element name="titulo" type="xsd:string"/>
+            <xsd:element name="autor" type="xsd:string"/>
+            <xsd:element name="precio" type="xsd:float"/>
+        </xsd:sequence>
+        <xsd:attribute name="isbn" type="xsd:string" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="tipoBiblioteca">
+        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+            <xsd:element ref="tns:libro"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="libro" type="tns:tipoLibro"/>
+    <xsd:element name="biblioteca" type="tns:tipoBiblioteca"/>
+</xsd:schema>
