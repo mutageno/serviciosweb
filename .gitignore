@@ -55,3 +55,7 @@ hs_err_pid*
 /RestJEE/EjemploRestSoapClient/target/
 /RestJEE/EjemploRestXml/target/
 /RestJEE/EjemploRestXmlClient/target/
+/mtom/JaxWsMtom/target/
+/jaxwshandlers/direccionmac/target/
+/jaxwshandlers/JaxWsHandlerServer/target/
+/jaxwshandlers/JaxWsHandlerClient/target/

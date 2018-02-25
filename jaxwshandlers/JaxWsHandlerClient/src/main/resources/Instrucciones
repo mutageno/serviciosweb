@@ -1,0 +1,11 @@
+Es necesario añadir
+    @HandlerChain(file="handler-chain.xml")
+a la clase 
+public class ServerInfo_Service extends Service{}
+Es decir,
+    @HandlerChain(file="handler-chain.xml")
+    public class ServerInfo_Service extends Service{...}
+sin modificar el resto del código ni las anotaciones generadas por wsimport
+
+
+
