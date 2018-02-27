@@ -1,4 +1,4 @@
-package com.hascode.tutorial.ws.service;
+package com.curso.ejemplocontractfirst;
 
 import java.util.GregorianCalendar;
 
@@ -6,7 +6,7 @@ import javax.jws.WebService;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 
-@WebService(endpointInterface = "com.hascode.tutorial.ws.service.BookServicePortType")
+@WebService(endpointInterface = "com.curso.ejemplocontractfirst.BookServicePortType")
 public class BookServicePortImpl implements BookServicePortType {
 
 	@Override

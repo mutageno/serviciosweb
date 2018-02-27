@@ -100,7 +100,7 @@
                 <version>2.5</version>
                 <configuration>
                     <wsdlDirectory>${basedir}/src/main/resources/wsdl</wsdlDirectory>
-                    <packageName>com.hascode.tutorial.ws.service</packageName>
+                    <packageName>com.curso.ejemplocontractfirst</packageName>
                     <keep>true</keep>
                     <sourceDestDir>${basedir}/target/generated/src/main/java</sourceDestDir>
                 </configuration>
