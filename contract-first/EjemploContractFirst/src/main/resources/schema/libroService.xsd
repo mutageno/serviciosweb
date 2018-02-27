@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="http://com.curso.ejemplocontractfirst/LibroService/1.0" 
+        xmlns:tns="http://com.curso.ejemplocontractfirst/LibroService/1.0" elementFormDefault="qualified">
+
+    <element name="LibroServiceRequest"
+             type="tns:LibroServiceRequestType">
+    </element>
+    
+    <complexType name="LibroServiceRequestType">
+        <sequence>
+            <element name="limite" type="int"></element>
+        </sequence>
+    </complexType>
+    
+    <complexType name="LibroServiceResponseType">
+        <sequence>
+            <element name="libro" type="tns:LibroType" maxOccurs="unbounded" minOccurs="0"></element>
+        </sequence>
+    </complexType>
+
+    <element name="LibroServiceResponse"
+             type="tns:LibroServiceResponseType">
+    </element>
+
+    <complexType name="LibroType">
+        <sequence>
+            <element name="titulo" type="string" maxOccurs="1" minOccurs="1"></element>
+            <element name="autor" type="string" maxOccurs="1" minOccurs="1"></element>
+            <element name="fecha" type="date" maxOccurs="1" minOccurs="1"></element>
+        </sequence>
+    </complexType>
+</schema>

@@ -22,6 +22,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>jaxws</servlet-name>
-        <url-pattern>/bookService</url-pattern>
+        <url-pattern>/LibroService</url-pattern>
     </servlet-mapping>
 </web-app>

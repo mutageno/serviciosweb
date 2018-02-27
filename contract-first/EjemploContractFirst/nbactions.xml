@@ -4,6 +4,7 @@
             <actionName>CUSTOM-JettyRun</actionName>
             <displayName>JettyRun</displayName>
             <goals>
+                <goal>clean:clean</goal>
                 <goal>jetty:run</goal>
             </goals>
         </action>
