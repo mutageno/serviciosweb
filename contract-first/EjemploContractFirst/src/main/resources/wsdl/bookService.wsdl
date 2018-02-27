@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="bookService"
+	targetNamespace="http://www.hascode.com/bookService/1.0" xmlns:tns="http://www.hascode.com/bookService/1.0"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://www.hascode.com/bookService/1.0">
+			<xsd:import schemaLocation="../schema/bookService.xsd"
+				namespace="http://www.hascode.com/bookService/1.0" />
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="BookServiceRequest">
+		<wsdl:part name="BookServiceRequest" element="tns:BookServiceRequest" />
+	</wsdl:message>
+	<wsdl:message name="BookServiceResponse">
+		<wsdl:part name="BookServiceResponse" element="tns:BookServiceResponse" />
+	</wsdl:message>
+	<wsdl:portType name="BookServicePortType">
+		<wsdl:operation name="fetchBooks">
+			<wsdl:input name="BookServiceRequest" message="tns:BookServiceRequest" />
+			<wsdl:output name="BookServiceResponse" message="tns:BookServiceResponse" />
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="BookServiceBinding" type="tns:BookServicePortType">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="fetchBooks">
+			<soap:operation style="document"
+				soapAction="http://www.hascode.com/bookService/fetchBooks" />
+			<wsdl:input name="BookServiceRequest">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="BookServiceResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="BookService">
+		<wsdl:port name="BookServicePort" binding="tns:BookServiceBinding">
+			<soap:address location="/service/bookService" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
