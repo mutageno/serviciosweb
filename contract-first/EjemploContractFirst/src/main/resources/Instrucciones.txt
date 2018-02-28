@@ -1,0 +1,5 @@
+Configurar maven
+Para arrancar el ejemplo: mvn clean jetty:run
+Para acceder al servicio: http://localhost:8080/LibroService
+Para ver el wsdl: http://localhost:8080/LibroService?wsdl
+Para ver el archivo de esquema: http://localhost:8080/LibroService?xsd=1
