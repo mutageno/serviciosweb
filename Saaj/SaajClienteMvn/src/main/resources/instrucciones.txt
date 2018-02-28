@@ -1,4 +1,4 @@
 Asegurarse de que SaajServerMvn se está ejecutando
 Abrir una ventana de comandos dentro de SaajClienteMvn y teclear, en función de dónde tengamos instalado el jdk:
-C:\jdk1.8.0_121\bin\wsimport -s src/main/java http://localhost:8080/WebServiceDemo/Saludo?wsdl
+C:\jdk1.8.0_121\bin\wsimport -Xnocompile -s src/main/java http://localhost:8080/WebServiceDemo/Saludo?wsdl
 Observar el resultado
