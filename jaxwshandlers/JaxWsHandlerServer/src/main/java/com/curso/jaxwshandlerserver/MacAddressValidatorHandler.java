@@ -42,13 +42,7 @@ public class MacAddressValidatorHandler implements SOAPHandler<SOAPMessageContex
                 SOAPMessage soapMsg = context.getMessage();
                 SOAPEnvelope soapEnv = soapMsg.getSOAPPart().getEnvelope();
                 SOAPHeader soapHeader = soapEnv.getHeader();
-                //Si no hay cabecera, añadir una
-                if (soapHeader == null) {
-                    soapHeader = soapEnv.addHeader();
-                    //Lanzar excepción
-                    generateSOAPErrMessage(soapMsg, "No SOAP header.");
-                }
-                //Get client mac address from SOAP header
+                //Obtener la dirección MAC de la cabecera SOAP
                 Iterator it = soapHeader.extractHeaderElements(SOAPConstants.URI_SOAP_ACTOR_NEXT);
                 //Si no hay bloque de cabecera para el siguiente actor lanzar excepción
                 if (it == null || !it.hasNext()) {

@@ -41,10 +41,7 @@ public class MacAddressInjectHandler implements SOAPHandler<SOAPMessageContext> 
             try {
                 SOAPMessage soapMsg = context.getMessage();
                 SOAPEnvelope soapEnv = soapMsg.getSOAPPart().getEnvelope();
-                SOAPHeader soapHeader = soapEnv.getHeader();                
-                if (soapHeader == null) {
-                    soapHeader = soapEnv.addHeader();
-                }                
+                SOAPHeader soapHeader = soapEnv.getHeader();                             
                 String mac = getMACAddress();
                 //Añadir un soap header, llamado "mac address"
                 QName qname = new QName("http://jaxwshandlerserver.curso.com/", "macAddress");
@@ -79,7 +76,6 @@ public class MacAddressInjectHandler implements SOAPHandler<SOAPMessageContext> 
         return null;
     }
 
-    //return current client mac address
     private String getMACAddress() {
         InetAddress ip;
         StringBuilder sb = new StringBuilder();
@@ -94,7 +90,7 @@ public class MacAddressInjectHandler implements SOAPHandler<SOAPMessageContext> 
             }
             System.out.println(sb.toString());
         } catch (UnknownHostException | SocketException e) {
-            LOG.log(Level.SEVERE, "Ha ocrrido un error en getMACAddress", e);
+            LOG.log(Level.SEVERE, "Ha ocurrido un error en getMACAddress", e);
         }
         return sb.toString();
     }
