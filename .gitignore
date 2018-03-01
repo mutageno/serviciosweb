@@ -60,3 +60,5 @@ hs_err_pid*
 /jaxwshandlers/JaxWsHandlerServer/target/
 /jaxwshandlers/JaxWsHandlerClient/target/
 /contract-first/EjemploContractFirst/target/
+/soapfault/EjemploSoapFault/target/
+/soapfault/EjemploSoapFaultClient/target/
