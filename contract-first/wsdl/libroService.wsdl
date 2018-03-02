@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="LibroService"
+                  targetNamespace="http://com.curso.ejemplocontractfirst/LibroService/1.0" 
+                  xmlns:tns="http://com.curso.ejemplocontractfirst/LibroService/1.0"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <wsdl:types>
+        <xsd:schema targetNamespace="http://com.curso.ejemplocontractfirst/LibroService/1.0">
+            <xsd:import schemaLocation="../schema/libroService.xsd" namespace="http://com.curso.ejemplocontractfirst/LibroService/1.0" />
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="LibroServiceRequest">
+        <wsdl:part name="LibroServiceRequest" element="tns:LibroServiceRequest" />
+    </wsdl:message>
+    <wsdl:message name="LibroServiceResponse">
+        <wsdl:part name="LibroServiceResponse" element="tns:LibroServiceResponse" />
+    </wsdl:message>
+    <wsdl:portType name="LibroServicePortType">
+        <wsdl:operation name="obtenerLibros">
+            <wsdl:input name="LibroServiceRequest" message="tns:LibroServiceRequest" />
+            <wsdl:output name="LibroServiceResponse" message="tns:LibroServiceResponse" />
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="LibroServiceBinding" type="tns:LibroServicePortType">
+        <soap:binding style="document"
+                              transport="http://schemas.xmlsoap.org/soap/http" />
+        <wsdl:operation name="obtenerLibros">
+            <soap:operation style="document"
+                                        soapAction="http://com.curso.ejemplocontractfirst/LibroService/obtenerLibros" />
+            <wsdl:input name="LibroServiceRequest">
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output name="LibroServiceResponse">
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="LibroService">
+        <wsdl:port name="LibroServicePort" binding="tns:LibroServiceBinding">
+            <soap:address location="/service/LibroService" />
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,13 @@
+Abrir una ventana de comandos
+set JAVA_HOME=c:\jdk1.8.0_161
+set PATH=%PATH%;%JAVA_HOME%\bin
+Colocar en el path del sistema operativo el programa wsdl2java:
+set PATH=%PATH%;C:\eclipsejaxws\apache-cxf-3.2.2\bin
+
+Ir al directorio wsdl: cd wsdl
+Editar el archivo conf_wsdl.bat para que funcione en vuestros ordenadores
+Ejecutarlo: conf_wsdl
+
+Ejecutar: wsdl2java libroService.wsdl y observar los resultados
+
+Ejecutar: wsimport -keep -p prueba libroService.wsdl y observar los resultados

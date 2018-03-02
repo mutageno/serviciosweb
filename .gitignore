@@ -62,3 +62,4 @@ hs_err_pid*
 /contract-first/EjemploContractFirst/target/
 /soapfault/EjemploSoapFault/target/
 /soapfault/EjemploSoapFaultClient/target/
+/mtom/JaxWsMtomClient/target/
