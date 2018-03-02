@@ -63,3 +63,5 @@ hs_err_pid*
 /soapfault/EjemploSoapFault/target/
 /soapfault/EjemploSoapFaultClient/target/
 /mtom/JaxWsMtomClient/target/
+/clienteasync/EjemploServerAsync/target/
+/clienteasync/EjemploClientAsync/target/
