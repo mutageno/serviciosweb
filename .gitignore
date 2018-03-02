@@ -65,3 +65,5 @@ hs_err_pid*
 /mtom/JaxWsMtomClient/target/
 /clienteasync/EjemploServerAsync/target/
 /clienteasync/EjemploClientAsync/target/
+/mtom/JaxWsMtomStreaming/target/
+/mtom/JaxWsMtomClientStreaming/target/

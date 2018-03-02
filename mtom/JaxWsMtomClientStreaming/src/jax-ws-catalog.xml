@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/JaxWsMtomStreaming/MtomStreamingService?wsdl" uri="wsdl/localhost_8080/JaxWsMtomStreaming/MtomStreamingService.wsdl"/>
+    <system systemId="http://localhost:8080/JaxWsMtomStreaming/MtomStreamingService?xsd=1" uri="wsdl/localhost_8080/JaxWsMtomStreaming/MtomStreamingService.xsd_1.xsd"/>
+    <system systemId="http://www.w3.org/2005/05/xmlmime" uri="wsdl/www.w3.org/2005/05/xmlmime.xsd"/>
+</catalog>
