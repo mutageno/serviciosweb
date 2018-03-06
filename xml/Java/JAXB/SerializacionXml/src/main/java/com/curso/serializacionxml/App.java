@@ -6,9 +6,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.transform.stream.StreamSource;
 
 /**
  * Hello world!
@@ -35,11 +37,14 @@ public class App {
 
         Unmarshaller unmarshaller = context.createUnmarshaller();
         //Deserializamos a partir de un documento XML
-        Provincia provinciaAux = (Provincia) unmarshaller.unmarshal(new File(ARCHIVO_XML));
+        //Provincia provinciaAux = (Provincia) unmarshaller.unmarshal(new File(ARCHIVO_XML));
+        //marshaller.marshal(provinciaAux, System.out);
+        StreamSource provinciaSource = new StreamSource(new File(ARCHIVO_XML));
+        JAXBElement<Provincia> elementoProvincia = unmarshaller.unmarshal(provinciaSource, Provincia.class);
         System.out.println("********* Provincia cargado desde fichero XML***************");
         //Mostramos por linea de comandos el objeto Java obtenido
         //producto de la deserialización
-        marshaller.marshal(provinciaAux, System.out);
+        marshaller.marshal(elementoProvincia.getValue(), System.out);
 
     }
 

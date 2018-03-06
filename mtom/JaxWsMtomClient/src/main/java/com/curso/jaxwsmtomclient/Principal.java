@@ -48,7 +48,7 @@ public class Principal {
             System.err.println(ex);
         }
     }
-    private static final String DOWNLOAD_DIR = "e:/Test/Client/Download/";
+    private static final String DOWNLOAD_DIR = "c:/Test/Client/Download/";
 
     private static void llamadaAUpload(String fileName) {
         try { // Call Web Service Operation
@@ -70,7 +70,7 @@ public class Principal {
             System.err.println(ex);
         }
     }
-    private static final String UPLOAD_DIR = "e:/Test/Client/Upload/";
+    private static final String UPLOAD_DIR = "c:/Test/Client/Upload/";
 
     private static void llamadaAHello() {
         // TODO code application logic here

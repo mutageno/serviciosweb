@@ -4,9 +4,11 @@
  */
 package ejemplojaxbesquema;
 
-import generado.TipoBiblioteca;
-import generado.TipoLibro;
+//import generado.TipoBiblioteca;
+//import generado.TipoLibro;
 import javax.xml.bind.JAXBElement;
+import org.netbeans.xml.schema.biblioteca.TipoBiblioteca;
+import org.netbeans.xml.schema.biblioteca.TipoLibro;
 
 /**
  *

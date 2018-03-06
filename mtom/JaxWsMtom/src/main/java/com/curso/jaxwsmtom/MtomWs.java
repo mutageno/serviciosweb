@@ -43,7 +43,7 @@ public class MtomWs {
      */
     @WebMethod(operationName = "upload")
     public void upload(@WebParam(name = "fileName") final String fileName, @WebParam(name = "imageBytes") final byte[] imageBytes) {
-        String filePath = "e:/Test/Server/Upload/" + fileName;
+        String filePath = "c:/Test/Server/Upload/" + fileName;
         try {
             FileOutputStream fos = new FileOutputStream(filePath);
             try (BufferedOutputStream outputStream = new BufferedOutputStream(fos)) {
@@ -58,7 +58,7 @@ public class MtomWs {
 
     @WebMethod
     public byte[] download(String fileName) {
-        String filePath = "e:/Test/Server/Download/" + fileName;
+        String filePath = "c:/Test/Server/Download/" + fileName;
         System.out.println("Enviando archivo: " + filePath);
 
         try {

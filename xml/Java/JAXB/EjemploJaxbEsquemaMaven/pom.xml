@@ -14,22 +14,23 @@
             <plugin>
                 <groupId>org.jvnet.jaxb2.maven2</groupId>
                 <artifactId>maven-jaxb2-plugin</artifactId>
+                <version>0.13.3</version>
                 <executions>
-                    <execution>
+<!--                    <execution>
                         <goals>
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-<!--
+
                             <schemaIncludes>
                                 <include>jaxb/Biblioteca/*.xsd</include>
                             </schemaIncludes>
--->
+
                             <episodeFile>${project.build.directory}/generated-sources/xjc/META-INF/jaxb-Biblioteca.episode</episodeFile>
                             <generatePackage>generado</generatePackage>
                         </configuration>
                         <id>jaxb-generate-Biblioteca</id>
-                    </execution>
+                    </execution>-->
                     <execution>
                         <goals>
                             <goal>generate</goal>

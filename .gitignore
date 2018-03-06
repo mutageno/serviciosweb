@@ -67,3 +67,5 @@ hs_err_pid*
 /clienteasync/EjemploClientAsync/target/
 /mtom/JaxWsMtomStreaming/target/
 /mtom/JaxWsMtomClientStreaming/target/
+/xml/Java/JAXB/SerializacionXml/target/
+/xml/Java/JAXB/EjemploJaxbEsquemaMaven/target/
