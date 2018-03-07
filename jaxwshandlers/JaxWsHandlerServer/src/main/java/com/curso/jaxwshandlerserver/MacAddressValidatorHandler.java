@@ -55,7 +55,7 @@ public class MacAddressValidatorHandler implements SOAPHandler<SOAPMessageContex
                     generateSOAPErrMessage(soapMsg, "No se encuentra la dirección MAC.");
                 }
                 //La dirección MAC no es válida.Lanzar excepción
-                if (!macValue.equals("94-DE-80-7D-B2-F4")) {
+                if (!macValue.equals("0A-00-27-00-00-0D")) {
                     generateSOAPErrMessage(soapMsg, "La dirección MAC no es válida. Acceso denegado.");
                 }
                 //Escribir una traza del mensaje SOAP

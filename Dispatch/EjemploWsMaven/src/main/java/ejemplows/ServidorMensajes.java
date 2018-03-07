@@ -39,7 +39,7 @@ public class ServidorMensajes implements Provider<Source> {
     public static void main(String[] args) throws Exception {
         String url = Constantes.url;
         Endpoint.publish(url, new ServidorMensajes());
-        System.out.println("Servicio web arrancadso con éxito en " + Constantes.url);
+        System.out.println("Servicio web arrancado con éxito en " + Constantes.url);
     }
 
     @Override

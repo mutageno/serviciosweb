@@ -23,6 +23,16 @@ import javax.xml.ws.soap.MTOM;
  *
  * @author usuario
  */
+/*
+parseEagerly = true significa que el destino 
+debe esperar hasta que el archivo adjunto sea recibido completamente,
+y guardado en el disco, y luego puede proceder con la lógica de 
+negocio del método web.
+*/
+/*
+memoryThreshold = 40000L
+Los archivos adjuntos de menos de 4MB se almacenan en la memoria
+*/
 @StreamingAttachment(parseEagerly = true, memoryThreshold = 40000L)
 @MTOM
 @WebService(name = "MtomStreaming",
