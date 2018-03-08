@@ -31,7 +31,7 @@ negocio del método web.
 */
 /*
 memoryThreshold = 40000L
-Los archivos adjuntos de menos de 4MB se almacenan en la memoria
+Los archivos adjuntos de menor peso se almacenan en la memoria
 */
 @StreamingAttachment(parseEagerly = true, memoryThreshold = 40000L)
 @MTOM

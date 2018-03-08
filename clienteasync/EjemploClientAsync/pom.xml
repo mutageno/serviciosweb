@@ -42,7 +42,7 @@
                                 <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
                             </vmArgs>
                             <wsdlLocation>http://localhost:8080/EjemploServerAsync/Asincrono?wsdl</wsdlLocation>
-                            <staleFile>${project.build.directory}/jaxws/stale/Asincrono.stale</staleFile>
+                            <!--<staleFile>${project.build.directory}/jaxws/stale/Asincrono.stale</staleFile>-->
                         </configuration>
                         <id>wsimport-generate-Asincrono</id>
                         <phase>generate-sources</phase>

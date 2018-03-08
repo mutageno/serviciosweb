@@ -7,6 +7,7 @@ WsSoapGlashFish\FactorialWsMvn:
 	uso de EJBs para crear servicios web. Algunas características de JSE8 de cara al diseño
 SoapAsync\EjemploSoapAsyncMvn: servicio web concurrente
 SoapAsync\ClienteSoapAsyncMvn: cliente concurrente
+SoapAsync\ClienteSoapAsyncJSE7: cliente concurrente con Java 7
 WsSoapGlashFish\ClienteAjaxFactorialWsMvn:
 	Llamar a un servicio Web empleando JavaScript
 

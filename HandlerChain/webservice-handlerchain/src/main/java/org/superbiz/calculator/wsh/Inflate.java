@@ -27,8 +27,12 @@ import javax.xml.ws.handler.soap.SOAPHandler;
 import javax.xml.ws.handler.soap.SOAPMessageContext;
 import java.util.Collections;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Inflate implements SOAPHandler<SOAPMessageContext> {
+
+    private static final Logger LOG = Logger.getLogger(Inflate.class.getName());
 
     @Override
     public boolean handleMessage(SOAPMessageContext mc) {
@@ -44,6 +48,7 @@ public class Inflate implements SOAPHandler<SOAPMessageContext> {
 
                 final int value = new Integer(intNode.getNodeValue());
                 intNode.setNodeValue(Integer.toString(value * 1000));
+                LOG.log(Level.INFO,"handleMessage de Inflate ejecutado");
             }
 
             return true;
