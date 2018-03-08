@@ -70,3 +70,4 @@ hs_err_pid*
 /xml/Java/JAXB/SerializacionXml/target/
 /xml/Java/JAXB/EjemploJaxbEsquemaMaven/target/
 /Objetos/ClienteEjemploWsObjetosMaven/target/
+/SoapAsync/ClienteSoapAsyncJSE7/target/
