@@ -1,0 +1,6 @@
+Para usar arquetipos:
+	1.- mvn archetype:generate -Dfilter=org.apache:cxf. El arquetipo probablemente sea el 5
+		1.1.- 5: remote -> org.apache.cxf.archetype:cxf-jaxws-javafirst (Creates a project for developing a Web service starting from Java code)
+	2.- Para generar el programa y arrancarlo en un Tomcat embebido: mvn clean install tomcat:run-war
+	3.- Para verlo en el navegador, por defecto: http://localhost:8080/generadoConArquetipo
+	4.- Para ver el wsdl: http://localhost:8080/generadoConArquetipo/HelloWorld?wsdl
